@@ -40,11 +40,8 @@ cd motion-director
 ./install.sh --dir <path>  # any other agent's skills folder
 ```
 
-Hermes can also install it straight from GitHub:
-
-```sh
-hermes skills install https://github.com/sharbelxyz/motion-director
-```
+For Hermes, use the installer rather than `hermes skills install`: this skill ships its
+preview library (about 1,100 files), which Hermes's GitHub fetcher downloads one file at a time.
 
 Windows: install [Node.js 22+](https://nodejs.org) and [FFmpeg](https://ffmpeg.org), then copy
 `skills/motion-director` into your agent's skills folder (for Claude Code,
